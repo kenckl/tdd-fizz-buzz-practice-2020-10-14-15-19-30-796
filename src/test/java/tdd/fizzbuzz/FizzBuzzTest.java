@@ -50,4 +50,42 @@ public class FizzBuzzTest {
         assertEquals("Whizz", actual);
 
     }
+
+    @Test
+    void should_return_fizzbuzz_when_count_off_given_order_number_15(){
+
+        int orderNum = 15;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String actual = fizzBuzz.countOff(orderNum);
+
+        assertEquals("FizzBuzz", actual);
+
+    }
+
+    @Test
+    void should_return_fizzwhizz_when_count_off_given_order_number_21(){
+
+        int orderNum = 21;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String actual = fizzBuzz.countOff(orderNum);
+
+        assertEquals("FizzWhizz", actual);
+
+    }
+
+    @Test
+    void should_return_buzzwhizz_when_count_off_given_order_number_35(){
+
+        int orderNum = 35;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String actual = fizzBuzz.countOff(orderNum);
+
+        assertEquals("BuzzWhizz", actual);
+
+    }
+
+
 }

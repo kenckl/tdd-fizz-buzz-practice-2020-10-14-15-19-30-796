@@ -10,17 +10,22 @@ public class FizzBuzz {
     private static final String WHIZZ = "Whizz";
 
     public String countOff(int orderNum){
+        String say = "";
+
         if (orderNum % MODULO_3 == 0){
-            return FIZZ;
+            say += FIZZ;
         }
         if (orderNum % MODULO_5 == 0){
-            return BUZZ;
+            say += BUZZ;
         }
         if (orderNum % MODULO_7 == 0){
-            return WHIZZ;
+            say += WHIZZ;
         }
 
-        return String.valueOf(orderNum);
+        if (say.isEmpty())
+            return String.valueOf(orderNum);
+        else
+            return say;
     }
 
 }
